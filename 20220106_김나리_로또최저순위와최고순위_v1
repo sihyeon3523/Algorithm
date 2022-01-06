@@ -1,3 +1,4 @@
+#link: https://programmers.co.kr/learn/courses/30/lessons/77484
 def solution(lottos, win_nums):
     dic = dict.fromkeys(lottos, 0)
     dic_zero = dict.fromkeys([0],0)
