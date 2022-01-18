@@ -1,0 +1,40 @@
+#link: https://programmers.co.kr/learn/courses/30/lessons/77484
+def solution(lottos, win_nums):
+    dic = dict.fromkeys(lottos, 0)
+    dic_zero = dict.fromkeys([0],0)
+    seen_nums=[]
+    lottos_win_counts = 0
+            
+    if dic == dic_zero:
+        answer_allzero = [1,6]
+        return answer_allzero
+    
+    elif 0 not in lottos:      
+        for l in lottos:
+            if l in win_nums:
+                lottos_win_counts +=1
+        if lottos_win_counts == 0:
+          return [6,6]
+        else:
+          return [7-lottos_win_counts, 7-lottos_win_counts]    
+    else: 
+        for i in lottos:
+          if i == 0:
+            dic[i] += 1
+          else:
+            seen_nums += [i]
+        zero_cases = (dic[0],0)
+        
+        for j in seen_nums:
+            if j in win_nums:
+                lottos_win_counts+=1
+
+
+        maxval = max(zero_cases) + lottos_win_counts
+        minval = min(zero_cases) + lottos_win_counts
+
+        if minval == 0:
+            answer = [7-maxval, 6]
+        else:
+            answer = [7-maxval, 7-minval]
+            return answer
