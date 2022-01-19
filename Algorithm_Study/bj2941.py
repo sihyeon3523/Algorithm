@@ -10,6 +10,7 @@ while (i < len(word)):
     # 동일한 문자가 세 개  
     if word[i:i+3] == 'dz=':
         cnt += 1
+        
         #print(word[i:i+3],i, cnt)
         i += 3
         continue
