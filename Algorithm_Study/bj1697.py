@@ -1,5 +1,6 @@
 from collections import deque
--1 +1 *2 
+
+# 수빈 --> 동생 
 
 def bfs():
     q = deque()
@@ -10,13 +11,13 @@ def bfs():
         if x == k:
             print(dist[x])
             break
-        for nx in (x-1, x+1, 2*x):
+        for nx in (x+1, x-1, x*2):
             if 0 <= nx <= MAX and not dist[nx]:
                 dist[nx] = dist[x] + 1
                 q.append(nx)
-
+                
 MAX = 10**5
-dist = [0] * (MAX+1)
-n, k = map(int,input().split())
+dist = [0]*(MAX+1)
+n, k = map(int, input().split())
 
 bfs()
