@@ -1,5 +1,5 @@
 # 큐 2
-# 4시 57분 ~ 5시 13분 
+# 4시 57분 ~ 5시 16분 
 
 import sys
 from collections import deque
@@ -23,7 +23,8 @@ for i in range(n):
     elif cont[0] == 'pop':
         if len(q) == 0:
             print(-1)
-        else:       
+        else:     
+            # 가장 앞에 있는 문자 꺼내고 지우기   
             print(q.popleft())
 
     elif cont[0] == 'size':
