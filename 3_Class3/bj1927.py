@@ -38,12 +38,10 @@ while True:
 - 배열에 자연수 x를 넣는다
 - 배열에서 가장 작은 값을 출력하고, 그 값을 배열에서 제거
 '''
-import time
+import time # 단위는 초(s)
 start = time.time()
 
 import sys
-import heapq as hq
-
 n = int(input())
 
 a = []
