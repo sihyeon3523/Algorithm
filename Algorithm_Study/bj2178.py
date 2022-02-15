@@ -45,7 +45,7 @@ def bfs(graph, a, b):
 
 miro = []
 for i in range(n):
-    miro.append(list(map(int, input()))) # 왜그런지 모르겠네 
+    miro.append(list(map(int, input()))) 
 
 
 print(bfs(miro, 0, 0))
