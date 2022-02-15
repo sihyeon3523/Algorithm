@@ -10,11 +10,11 @@ a = [[[0]*3 for j in range(4)] for i in range(2)]
 # 리스트[높이][세로][가로]
 tomato = []
 q = deque()
-for i in range(h):
+for i in range(h): # 높이
     tmp = []
-    for j in range(n):
+    for j in range(n): # 세로
         tmp.append(list(map(int, sys.stdin.readline().split())))
-        for k in range(m):
+        for k in range(m): # 가로
             if tmp[j][k] == 1:
                 q.append([i,j,k])
     tomato.append(tmp)
