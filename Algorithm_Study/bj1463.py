@@ -24,5 +24,6 @@ for i in range(2, n+1):
     if i%3 == 0 and dp[i] > dp[i//3] + 1:
         # 3으로 나누는 경우로 변경 
         dp[i] = dp[i//3] + 1
+        
 print(dp[n])
 
