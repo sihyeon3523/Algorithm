@@ -49,5 +49,3 @@ for _ in range(T):
                 result += 1
     
     print(result)
-
-        

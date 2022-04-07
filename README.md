@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Algorithm
 
 #### 알고리즘 스터디 
@@ -10,3 +11,6 @@
 - 문자열 5문제
 - 수학 1문제 
 
+=======
+# GroupStudy_CodingTest
+>>>>>>> 9d74c17eb377f92424827039cff6cfcd24d29b8d

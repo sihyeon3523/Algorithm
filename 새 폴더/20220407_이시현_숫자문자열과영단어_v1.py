@@ -19,3 +19,6 @@ def solution(s):
         else:
             continue
     return int(s)
+
+a = [1,4,2,1]
+sorted(a, by=)
