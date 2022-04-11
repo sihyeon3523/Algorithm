@@ -10,6 +10,8 @@ def solution(numbers, target):
     # -인 경우의 값과 idx append 
     queue.append([-1*numbers[0], 0])
 
+    # q에 넣어줄 때에는 하나의 값만 넣을 수 있다 두 개의 값을 동시에 넣으려면 [], () 로 묶어줘야 한다
+
     # queue가 없어질 떄까지 while 문 돌리기 
     while queue:
         # queue 에서 첫번째 꺼 꺼냄 
